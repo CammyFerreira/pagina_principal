@@ -15,6 +15,9 @@
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -99,33 +102,82 @@
 
 
     <!-- Start Categories of The Month -->
-    <section class="container py-5">
-        <div class="row text-center pt-3">
-            <div class="col-lg-6 m-auto">
-                <h1 class="h1">Categorias</h1>
-            </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+<div class="container">
+    <div class="row text-center mb-3">
+        <div class="col-md-12">
+            <h2>Categorias</h2>
+        
+            <hr>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./assets/img/show.jpg" class="rounded-circle img-fluid border"></a>
-                <h5 class="text-center mt-3 mb-3">Shows</h5>
-                <p class="text-center"><a class="btn btn-success">Ver Mais</a></p>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./assets/img/standup.jpg" class="rounded-circle img-fluid border"></a>
-                <h2 class="h5 text-center mt-3 mb-3">Stand Up Comedy</h2>
-                <p class="text-center"><a class="btn btn-success">Ver Mais</a></p>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./assets/img/teatro.jpg" class="rounded-circle img-fluid border"></a>
-                <h2 class="h5 text-center mt-3 mb-3">Teatro</h2>
-                <p class="text-center"><a class="btn btn-success">Ver Mais</a></p>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <a class="btn btn-success">Ver Todas</a>
-            </div>
-        </div>
-    </section>
+    </div>
+	<div class="row">
+		<!-- Swiper -->
+  <div class="swiper-container">
+<div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img"><img src="./assets/img/show.jpg" width="260"></div>
+                                <div class="card-body">
+                                   <h5>Shows</h5>
+                                   <h4 class="pt-1 pb-2">Saiba mais</h4>
+                                 
+                                   <button id="bt1" type= "button" class="btn btn-outline-danger btn-block btn-sm">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img"><img src="./assets/img/teatro.jpg" width="260"></div>
+                                <div class="card-body">
+                                   <h5>Teatro</h5>
+                                   <h4 class="pt-1 pb-2">Saiba mais</h4>
+                                 
+                                   <button type= "button" class="btn btn-outline-danger btn-block btn-sm">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img"><img src="./assets/img/standup.jpg" width="260"></div>
+                                <div class="card-body">
+                                   <h5>Stand-up</h5>
+                                   <h4 class="pt-1 pb-2">Saiba mais</h4>
+                                 
+                                   <button type= "button" class="btn btn-outline-danger btn-block btn-sm">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img"><img src="./assets/img/show.jpg" width="260"></div>
+                                <div class="card-body">
+                                   <h5>Show</h5>
+                                   <h4 class="pt-1 pb-2">Saiba mais</h4>
+                                 
+                                   
+                                    <button type= "button" class="btn btn-outline-danger btn-block btn-sm">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      </div>
+      <div class="swiper-slide">
+         
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+  </div>
+
+	</div>
+</div>
     <!-- End Categories of The Month -->
 
 
@@ -171,7 +223,7 @@
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-90">
                         <a href="shop-single.html">
-                            <img src="./assets/img/product1.jpg" class="card-img-top" alt="...">
+                            <img src="./assets/img/product1.jpg" class="card-img-top" alt="..."height="220">
                         </a>
                         <div class="card-body">
                             <a href="shop-single.html" class="h2 text-decoration-none text-dark">Brasil Game Show</a>
@@ -179,6 +231,15 @@
                                 A cada edição apresenta mais atrações para o público se divertir com milhares de estações, sejam máquinas arcade, plataformas mobile, PCs, óculos de realidade virtual, consoles, board games, card games ou qualquer outra forma jogar.
                             </p>
                             <button>Ver Mais</button>
+                            <style>
+                                button {
+                                    background-color: #126E82;
+                                    border-radius: 10px;
+                                    border: none;
+                                    color:white;
+
+                                }
+                            </style>
                         </div>
                     </div>
                 </div>
